@@ -10,11 +10,14 @@ Allow js using `+=`/`-=` to add or remove delegates
 
 ```js
 const del = delegates()                                    
-const handler = () => { console.log('This is a handler') } 
+const handler = () => { console.log('This is a handler') }
 del.propertyChanged += handler                             
-del.propertyChanged()                                     
+del.propertyChanged()
 // => This is a handler
-del.propertyChanged -= handler                       
-del.propertyChanged()                              
+del.onClick += del.propertyChanged
+del.onClick()
+// => This is a handler
+del.propertyChanged -= handler
+del.onClick()
 // ...Empty
 ```
