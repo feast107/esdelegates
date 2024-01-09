@@ -5,7 +5,7 @@ Allow js using `+=`/`-=` to add or remove delegates
 
 ## Example
 
-![Alt text](image.png)
+![Alt text](./image.png)
 
 
 ```js
