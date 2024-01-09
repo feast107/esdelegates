@@ -1,5 +1,5 @@
 const delegates = (function() {
-    const globalDelegates = []
+    const globalDelegates = [()=>{}]
 
     Function.prototype.valueOf = function () {
         if (this.globalIndex !== undefined) return this.globalIndex
